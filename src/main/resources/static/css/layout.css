@@ -63,7 +63,7 @@ body {
 }
 
 .clouds>img {
-  position: absolute;
+  position: relative;
   z-index: 1;
   height: var(--height-clouds-img);
   width: var(--width-clouds-img);
@@ -75,8 +75,7 @@ body {
 
 .clouds>.second {
   top: var(--top-clouds-second);
-  /* left: var(--left-clouds-second); */
-  right: 0;
+  left: var(--left-clouds-second);
 }
 
 .background {
@@ -518,12 +517,11 @@ body {
   top: var(--top-info-label);
   width: var(--width-info-label);
   text-align: center;
-  font-size: var(--font-size-9pt);
-  font-weight: var(--font-weight-regular);
-  color: #9baebf;
-  background: #0000;
-  z-index: 99;
+  font-size: .9rem;
   font-weight: bolder;
+  color: #6a95e1;
+  background: transparent;
+  z-index: 99;
   font-family: "LXGWWenKai-Regular" !important;
 }
 
@@ -682,16 +680,12 @@ body {
   opacity: 0.5;
   animation: wiggle-first-control;
   animation-duration: var(--animation-duration-wiggle-first-control);
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 .controls>.second {
   left: var(--left-controls-second);
   animation: wiggle-second-control;
   animation-duration: var(--animation-duration-wiggle-second-control);
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 .controls>.first:active {
@@ -751,9 +745,6 @@ body {
 
 .contacts-links>a>.first {
   left: var(--left-contacts-links-a-first);
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-top: 7px;
 }
 
 .contacts-links>a>.first:active {
@@ -762,9 +753,6 @@ body {
 
 .contacts-links>a>.second {
   left: var(--left-contacts-links-a-second);
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-top: 7px;
 }
 
 .contacts-links>a>.second:active {
@@ -834,7 +822,7 @@ body {
   display: inline-block;
   margin-right: var(--margin-right-labels-grid-div);
   margin-bottom: var(--margin-bottom-labels-grid-div);
-  height: var(--height-labels-grid-div);
+  height: 1.2rem;
   width: var(--width-labels-grid-div);
   text-align: center;
   font-size: var(--font-size-9pt);
