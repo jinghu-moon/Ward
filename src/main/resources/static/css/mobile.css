@@ -1,0 +1,12 @@
+/*@media (max-width: 960px) {*/
+/*  .row {*/
+/*    transform: scale(1.2);*/
+/*  }*/
+/*}*/
+
+/* 手机端放大 */
+@media (max-width: 1000px) {
+  .row {
+    transform: scale(1.2);
+  }
+}
